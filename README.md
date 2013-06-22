@@ -15,7 +15,6 @@ usage
 
 1. save as example.py
 
-::
 
    from django.utils.translation import ugettext_lazy as _
 
@@ -25,7 +24,6 @@ usage
 
 $ pylint -E example.py
 
-::
 
    No config file found, using default configuration
    ************* Module example
@@ -35,6 +33,5 @@ $ pylint -E example.py
 
 pylint -E --load-plugins=PylintPlugin.astng_django example.py
 
-::
 
    No config file found, using default configuration
