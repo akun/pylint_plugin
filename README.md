@@ -15,23 +15,26 @@ usage
 
 1. save as example.py
 
+<pre><code>
+from django.utils.translation import ugettext_lazy as _
 
-   from django.utils.translation import ugettext_lazy as _
-
-   print _('damn it!')
+print _('damn it!')
+</code></pre>
 
 2. run pure pylint
 
 $ pylint -E example.py
 
-
-   No config file found, using default configuration
-   ************* Module example
-   E:  3,6: _ is not callable
+<pre><code>
+No config file found, using default configuration
+************* Module example
+E:  3,6: _ is not callable
+</code></pre>
 
 3. run pylint with plugin
 
-pylint -E --load-plugins=PylintPlugin.astng_django example.py
+$ pylint -E --load-plugins=PylintPlugin.astng_django example.py
 
-
-   No config file found, using default configuration
+<pre><code>
+No config file found, using default configuration
+</code></pre>
